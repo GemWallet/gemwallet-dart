@@ -96,6 +96,7 @@ class Result {
   external String get address;
   external String get publicKey;
   external String get network;
+  external String get chain;
   external String get signedMessage;
   external bool get isInstalled;
 }
