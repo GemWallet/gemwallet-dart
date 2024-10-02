@@ -26,8 +26,8 @@ class GemWalletApi {
     return await promiseToFuture(_getNetwork());
   }
 
-  static Future<Response> signMessage(String message) async {
-    return await promiseToFuture(_signMessage(message));
+  static Future<Response> signMessage(String message, bool? isHex) async {
+    return await promiseToFuture(_signMessage(message, isHex));
   }
 }
 
@@ -47,7 +47,7 @@ external dynamic _getPublicKey();
 external dynamic _getNetwork();
 
 @JS('signMessage')
-external dynamic _signMessage(String message);
+external dynamic _signMessage(String message, bool? isHex);
 
 @JS()
 @anonymous
