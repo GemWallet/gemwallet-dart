@@ -64,7 +64,7 @@ class Transaction {
   external factory Transaction({
     String? TransactionType,
     String? Destination,
-    String? Amount,
+    dynamic? Amount,
     String? Account,
     String? Channel,
     String? NFTokenSellOffer,
