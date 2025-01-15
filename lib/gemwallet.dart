@@ -86,7 +86,8 @@ class SubmitTransactionRequest {
 @JS()
 @anonymous
 class Response {
-  external Result get result;
+  external String get type;
+  external Result? get result;
 }
 
 @JS()
